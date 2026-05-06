@@ -1,59 +1,64 @@
-# HRSys
+# Work Arrangement – Proof of Concept (Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.1.
+This repository contains a Proof of Concept (POC) implementation for the **Work Arrangement** module.  
+It includes:
 
-## Development server
+- Work Arrangement Templates List
+- Create / Edit Template Screen
+- Weekly schedule grid (Mon–Sun)
+- Time pickers and shift type dropdown
+- Routing and UI flow
+- SQL database schema for template storage
 
-To start a local development server, run:
+This POC is built using **Angular** and **Angular Material**, with hard‑coded data for demonstration purposes.
+
+---
+
+## 🚀 Live Features Implemented
+
+### ✔ Work Arrangement Templates Page
+- List of templates
+- Create Template button
+- Edit Template button
+- Weekly schedule summary
+
+### ✔ Create / Edit Template Screen
+- Template name
+- Template type dropdown
+- Weekly grid (Mon–Sun)
+- Working checkbox
+- Start/End time pickers
+- Shift type dropdown
+- Auto‑load existing data when editing
+
+### ✔ SQL Schema
+- Database tables for storing templates
+- Weekly schedule structure
+- Included as `.sql` file in the repository
+
+---
+
+## 🛠️ Tech Stack
+
+- **Angular 20**
+- **Angular Material (Material 3)**
+- **TypeScript**
+- **SCSS**
+- **SQL Server (schema provided)**
+
+---
+
+## 📦 Installation & Setup
+
+### 1. Clone the repository
 
 ```bash
+git clone <your-git-url>
+cd <project-folder>
+npm install
 ng serve
-```
+Then open:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+http://localhost:4200
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
