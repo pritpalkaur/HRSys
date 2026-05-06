@@ -1,0 +1,26 @@
+.page-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.template-card {
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.template-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.type-label {
+  margin: 5px 0;
+  color: #555;
+}
+
+.summary {
+  font-size: 14px;
+  color: #333;
+}

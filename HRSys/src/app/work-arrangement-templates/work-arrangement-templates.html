@@ -1,0 +1,26 @@
+<div class="page-container">
+
+  <h2>Work Arrangement Templates</h2>
+
+  <button mat-raised-button color="primary" (click)="onCreate()">
+    + Create Template
+  </button>
+
+  <mat-card class="template-card" *ngFor="let t of templates">
+    <div class="template-header">
+      <h3>{{ t.name }}</h3>
+      <button mat-stroked-button color="accent" (click)="onEdit(t)">
+        Edit
+      </button>
+    </div>
+
+    <p class="type-label">
+      Type: <strong>{{ t.type }}</strong>
+    </p>
+
+    <p class="summary">
+      {{ t.scheduleSummary }}
+    </p>
+  </mat-card>
+
+</div>
