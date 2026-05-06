@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-
+import { Router } from '@angular/router'; 
 interface WorkArrangementTemplate {
   id: number;
   name: string;
@@ -22,7 +22,7 @@ interface WorkArrangementTemplate {
   styleUrls: ['./work-arrangement-templates.css']
 })
 export class WorkArrangementTemplates {
-
+constructor(private router: Router) {}
   templates: WorkArrangementTemplate[] = [
     {
       id: 1,
@@ -51,7 +51,7 @@ export class WorkArrangementTemplates {
   ];
 
   onCreate() {
-    alert('Create Template clicked');
+        this.router.navigate(['/work-arrangements/create']);
   }
 
   onEdit(template: WorkArrangementTemplate) {
