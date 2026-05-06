@@ -55,6 +55,7 @@ constructor(private router: Router) {}
   }
 
   onEdit(template: WorkArrangementTemplate) {
-    alert('Edit Template: ' + template.name);
+      this.router.navigate(['/work-arrangements/edit', template.id]);
+      //alert('Edit Template: ' + template.name);
   }
 }

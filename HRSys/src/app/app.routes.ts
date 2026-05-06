@@ -5,5 +5,6 @@ import { WorkArrangementTemplateForm } from './work-arrangement-template-form/wo
 export const routes: Routes = [
   { path: '', redirectTo: 'work-arrangements', pathMatch: 'full' },
   { path: 'work-arrangements', component: WorkArrangementTemplates },
-  { path: 'work-arrangements/create', component: WorkArrangementTemplateForm }
+  { path: 'work-arrangements/create', component: WorkArrangementTemplateForm },
+  { path: 'work-arrangements/edit/:id', component: WorkArrangementTemplateForm }
 ];

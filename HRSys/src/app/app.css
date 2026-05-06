@@ -1,0 +1,20 @@
+@use '@angular/material' as mat;
+
+// 1. Define your brand colors (change these to your preferred colors)
+$primary-color: mat.define-palette(mat.$blue-palette, 700);
+$accent-color: mat.define-palette(mat.$amber-palette, 500);
+$warn-color: mat.define-palette(mat.$red-palette, 600);
+
+// 2. Create your theme
+$work-arrangement-theme: mat.define-light-theme((
+  color: (
+    primary: $primary-color,
+    secondary: $accent-color,
+    warn: $warn-color
+  ),
+  typography: mat.define-typography-config(),
+  density: 0
+));
+
+// 3. Apply the theme to all Material components
+@include mat.all-component-themes($work-arrangement-theme);

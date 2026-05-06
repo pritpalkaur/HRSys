@@ -1,6 +1,6 @@
 <mat-card class="form-container">
 
-  <h2>Create / Edit Work Arrangement Template</h2>
+<h2>{{ route.snapshot.paramMap.get('id') ? 'Edit Template' : 'Create Template' }}</h2>
 
   <mat-form-field appearance="outline" class="full-width">
     <mat-label>Template Name</mat-label>
