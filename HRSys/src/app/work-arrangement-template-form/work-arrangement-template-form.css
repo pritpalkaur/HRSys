@@ -1,0 +1,33 @@
+.form-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.week-grid {
+  margin-top: 20px;
+}
+
+.day-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.day-name {
+  width: 50px;
+  font-weight: bold;
+}
+
+.time-field {
+  width: 140px;
+}
+
+.shift-field {
+  width: 160px;
+}
